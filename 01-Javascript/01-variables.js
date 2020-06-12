@@ -16,9 +16,60 @@ const texto = "Adrian"; // string
 const booleanooo = false; // boolean
 const hijos = null; // object
 const zapatos = undefined; // undefined
+const apellido = 'Eguez'; // undefined
 console.log(typeof numero);
 console.log(typeof sueldo);
 console.log(typeof texto);
 console.log(typeof booleanooo);
 console.log(typeof hijos);
-console.log(typeof numero);
+console.log(typeof zapatos);
+console.log(typeof apellido);
+console.log(typeof Number("asd"));
+console.log(Number("asd"));
+
+if(true == true){
+    console.log("Es verdadero"); //!
+}else{
+    console.log("Es Falso");
+}
+
+if(true == false){
+    console.log("Es verdadero");
+}else{
+    console.log("Es Falso"); //!
+}
+
+if(""){
+    console.log("Es verdadero");
+}else{
+    console.log("Es Falsy"); //!
+}
+if("Adrian"){
+    console.log("Es truty");
+}else{
+    console.log("Es Falso");
+}
+if(-1){
+    console.log("Es truty"); // Truty
+}else{
+    console.log("Es Falso");
+}
+if(0){
+    console.log("Es truty");
+}else{
+    console.log("Es Falso"); // Truty
+}
+if(1){
+    console.log("Es truty"); // Falsy
+}else{
+    console.log("Es Falso");
+}
+
+
+
+
+
+
+
+
+
