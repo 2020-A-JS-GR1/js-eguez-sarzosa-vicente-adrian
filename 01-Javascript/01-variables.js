@@ -91,12 +91,13 @@ const adrian = {
     casado: false,
     ropa: {
         color: 'plomo',
-        talla: '40'
+        talla: '40',
     },
-    mascotas: ['Cachetes', 'Pequitas', 'Panda']
+    mascotas: ['Cachetes', 'Pequitas', 'Panda'],
 }; // object
 adrian.nombre; // "Adrian"
 adrian.apellido; // 'Eguez'
+
 
 
 const arregloNumeros = []; // object
