@@ -64,8 +64,45 @@ if(1){
 }else{
     console.log("Es Falso");
 }
+if(null){
+    console.log("Es truty");
+}else{
+    console.log("Es Falso"); // Falsy
+}
+if(undefined){
+    console.log("Es truty");
+}else{
+    console.log("Es Falso");  // Falsy
+}
+
+// Orden de importancia
+// 1) "const"
+// 2) "let"
+// 3) X -> "var"
+
+// Objetos Js (JSON) - Arreglos
+
+const adrian = {
+    nombre: "Adrian", // llave: valor,
+    "apellido": 'Eguez',
+    edad: 31,
+    hijos: null,
+    zapatos: undefined,
+    casado: false,
+    ropa: {
+        color: 'plomo',
+        talla: '40'
+    },
+    mascotas: ['Cachetes', 'Pequitas', 'Panda']
+}; // object
+adrian.nombre; // "Adrian"
+adrian.apellido; // 'Eguez'
 
 
+const arregloNumeros = []; // object
+
+console.log(adrian);
+console.log(arregloNumeros);
 
 
 
