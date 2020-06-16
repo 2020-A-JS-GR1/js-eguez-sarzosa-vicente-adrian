@@ -133,6 +133,10 @@ edadAdrian = edadAdrian + 1;
 console.log(edadAdrian); // 32
 console.log(edadVicente); // 31
 // Lista de variables por REFERENCIA en JS
+// object!!!!
+// ARREGLOS!!!!
+
+
 // let rafael = {
 //     nombre: "Rafael"
 // };
@@ -156,6 +160,9 @@ lenin.nombre = "Lenin";
 delete rafael.nombre;
 console.log(rafael);
 console.log(lenin);
+let arregloClonado = Object.assign([],[1,2,3,4,5]);
+// let arregloClonado = Object.assign([],[1,2,3,4,5]);
+console.log(arregloClonado);
 /*
 const arregloNumeros = []; // object
 
