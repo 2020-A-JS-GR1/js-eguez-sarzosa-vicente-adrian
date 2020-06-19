@@ -98,18 +98,36 @@ console.log('respuestaForEach', respuestaForEach);  // undefined
 // devolver NUEVO ELEMENTO
 const respuestaMap = arreglo
     .map(
-        function (valorActual, indiceActual, arregloCompleto) {
-            valorActual.nota = valorActual.nota + 1;
-            return valorActual;
+        (valorActual, indiceActual, arregloCompleto) => {
+            const nuevoElemento = {
+                id: valorActual.id,
+                nombre: valorActual.nombre,
+                nota: valorActual.nota + 1,
+            };
+            return nuevoElemento;
         }
     );
 console.log('respuestaMap', respuestaMap);
 console.log('arreglo', arreglo);
 const respuestaMapNuevo = arreglo
     .map(
-        function (valorActual, indiceActual, arregloCompleto) {
+        // Funcion Anonima -> NO TIENE NOMBRE
+        // Funcion de flecha GORDA
+        (valorActual, indiceActual, arregloCompleto) => {
             return valorActual.nota;
         }
     );
 console.log('respuestaMapNuevo', respuestaMapNuevo);
 console.log('arreglo', arreglo);
+
+// FILTER
+// devolver EXPRESION TRUTY FALSY
+const respuestaFilter = arreglo
+    .filter(
+        (valorActual, indiceActual, arregloCompleto) => {
+            return valorActual.nota >= 14;
+        }
+    );
+console.log('respuestaFilter', respuestaFilter);
+console.log('arreglo', arreglo);
+
