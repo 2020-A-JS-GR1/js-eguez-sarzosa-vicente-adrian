@@ -12,6 +12,7 @@ fs.readFile( // ASINCRONA
         }
     }
 );
+
 // EJEMPLO CODIGO MODO SINCRONO (NO EXISTE EN JS ESTE TIPO DE CODIGO PARA ESTA FUNCION)
 // const respuesta = fs.readFile( // ASINCRONA
 //     './06-ejemplo.txt',
@@ -20,93 +21,3 @@ fs.readFile( // ASINCRONA
 const suma = 5 + 3; // SINCRONA
 console.log('Suma', suma); // SINCRONA
 console.log('Final'); // SINCRONA
-console.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONAconsole.log('Suma', suma); // SINCRONA
-console.log('Final'); // SINCRONA
-
