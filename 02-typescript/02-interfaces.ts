@@ -41,3 +41,35 @@ const adrian: Usuario | number = {
         }
     }
 };
+
+adrian.imprimirUsuario('fgdgfdf');
+// adrian.calcularImpuesto(12);
+adrian.calcularImpuesto(12);
+
+let f1 = function () {
+    return 'ok'
+}
+let f2 = () => {
+    return 'ok'
+}
+let objeto = {
+    f2: function () {
+
+    },
+    f4: () => {
+
+    }
+}
+
+let a = [];
+a.forEach(
+    function () {
+
+    }
+)
+a.forEach(
+    () => {
+
+    }
+)
+
