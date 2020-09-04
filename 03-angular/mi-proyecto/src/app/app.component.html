@@ -1,23 +1,71 @@
 
+<h1>Lista de peliculas</h1>
+<!-- Directivas - NGFOR  -->
+<p *ngFor="let numero of arregloNumeros">
+  {{numero}}
+</p>
+<!-- Directivas - NGIF  -->
+<p *ngIf="false">
+  OCULTO
+</p>
 
-<h1>Titulo 1</h1>
-<h6>Titulo 6</h6>
-<p>Parrafo</p>
-<ul>
-  <li>Papa</li>
-  <li>Cebolla</li>
-</ul>
-<ol>
-  <li>A</li>
-  <li>B</li>
-  <li>C</li>
-</ol>
-<img
-  src="https://www.40defiebre.com/wp-content/uploads/2015/10/imagenes.png"
-  alt=""
->
-<!-- anchor ancla -->
-<a href="https://www.google.com">
-  IR A GOOGLE
-</a>
-<button>Mi primer boton</button>
+<div *ngFor="let pelicula of arregloPeliculas">
+
+  <app-carta-pelicula
+    [urlImagen]="pelicula.url"
+    [descripcion]="pelicula.descripcion"
+    [nombreBoton]="pelicula.nombrePelicula"
+    (eventoDioClicEnBoton)="mensajeConsola($event)"
+    (eventoDioClicEnImagen)="mensajeConsola($event)"
+  >
+  </app-carta-pelicula>
+
+</div>
+
+<!--<br>-->
+
+<!--<app-carta-pelicula-->
+<!--  urlImagen="https://los40es00.epimg.net/los40/imagenes/2020/08/04/cinetv/1596531662_429948_1596533048_noticia_normal.jpg"-->
+<!--  descripcion="Descripcion 2"-->
+<!--  nombreBoton="Like 2"-->
+<!--&gt;-->
+<!--</app-carta-pelicula>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<h1>Titulo 1</h1>-->
+<!--<h6>Titulo 6</h6>-->
+<!--<p>Parrafo</p>-->
+<!--<ul>-->
+<!--  <li>Papa</li>-->
+<!--  <li>Cebolla</li>-->
+<!--</ul>-->
+<!--<ol>-->
+<!--  <li>A</li>-->
+<!--  <li>B</li>-->
+<!--  <li>C</li>-->
+<!--</ol>-->
+<!--<img-->
+<!--  src="https://www.40defiebre.com/wp-content/uploads/2015/10/imagenes.png"-->
+<!--  alt=""-->
+<!--&gt;-->
+<!--&lt;!&ndash; anchor ancla &ndash;&gt;-->
+<!--<a href="https://www.google.com">-->
+<!--  IR A GOOGLE-->
+<!--</a>-->
+<!--<button>Mi primer boton</button>-->
