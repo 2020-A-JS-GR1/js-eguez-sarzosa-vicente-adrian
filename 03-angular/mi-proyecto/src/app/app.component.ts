@@ -30,6 +30,8 @@ export class AppComponent {
     }
   ]
 
+  arregloUsuarios = [];
+
   arregloNumeros = [1, 2, 3]
 
   // Inyectar Dependencias
@@ -43,13 +45,34 @@ export class AppComponent {
     const observableTraerTodos = this._usuarioService.traerTodos();
     observableTraerTodos
       .subscribe(
-        (data)=>{ // THEN TRY
+        (data) => { // THEN TRY
+          this.arregloUsuarios = data as any[];
           console.log(data);
         },
-        (error)=>{ // CATCH
+        (error) => { // CATCH
           console.log(error);
         }
       );
+  }
+
+  crearUsuario() {
+    const usuarioNuevo = {
+      cedula: '1231231255',
+      nombre: 'Naruto',
+      apellido: 'Uzumaki'
+    };
+    const obsCrearUsuario = this._usuarioService
+      .crear(usuarioNuevo);
+    obsCrearUsuario
+      .subscribe(
+        (datos) => {
+          console.log('Nuevo Usuario', datos)
+          this.mensajeConsola(true);
+        },
+        (error) => {
+          console.error('Error', error);
+        }
+      )
   }
 
 }
