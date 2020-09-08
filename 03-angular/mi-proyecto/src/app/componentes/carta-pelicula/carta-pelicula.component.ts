@@ -36,10 +36,12 @@ export class CartaPeliculaComponent
 
   ngOnInit(): void {
     console.log('INIT');
+    // Logica Inicial del componente
   }
 
   ngOnDestroy(): void {
     console.log('Destroy');
+    // Dessuscribimos de todos las suscripciones
   }
 
   ejemploFuncion() {

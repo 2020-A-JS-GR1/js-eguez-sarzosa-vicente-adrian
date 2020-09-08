@@ -8,6 +8,7 @@ import {UsuarioService} from './servicios/http/usuario.service';
 })
 export class AppComponent {
   title = 'mi-proyecto';
+  habilitado = true;
 
   arregloPeliculas = [
     {
@@ -32,6 +33,8 @@ export class AppComponent {
 
   arregloUsuarios = [];
 
+  arregloObservables = [];
+
   arregloNumeros = [1, 2, 3]
 
   // Inyectar Dependencias
@@ -43,7 +46,7 @@ export class AppComponent {
   mensajeConsola(objeto: boolean) {
     console.log('Llego el evento', objeto);
     const observableTraerTodos = this._usuarioService.traerTodos();
-    observableTraerTodos
+    const suscripcion = observableTraerTodos
       .subscribe(
         (data) => { // THEN TRY
           this.arregloUsuarios = data as any[];
@@ -53,6 +56,8 @@ export class AppComponent {
           console.log(error);
         }
       );
+    this.arregloObservables.push(suscripcion);
+    suscripcion.unsubscribe();
   }
 
   crearUsuario() {

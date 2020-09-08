@@ -26,6 +26,15 @@
 <!--  Crear Usuario-->
 <!--</button>-->
 
+<button (click)="habilitado = !habilitado">
+  {{habilitado ? 'Habilitado' : 'Deshabilitado'}}
+</button>
+
+<app-carta-pelicula *ngIf="habilitado">
+
+</app-carta-pelicula>
+
+
 <div *ngFor="let usuario of arregloUsuarios">
   {{usuario.nombre}}
 </div>
