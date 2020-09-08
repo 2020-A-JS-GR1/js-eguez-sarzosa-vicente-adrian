@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {UsuarioService} from './servicios/http/usuario.service';
 
 @Component({
@@ -6,7 +6,7 @@ import {UsuarioService} from './servicios/http/usuario.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'mi-proyecto';
   habilitado = true;
 
@@ -42,6 +42,9 @@ export class AppComponent {
     private readonly _usuarioService: UsuarioService
   ) {
   }
+  ngOnInit() {
+    this.mensajeConsola(true);
+  }
 
   mensajeConsola(objeto: boolean) {
     console.log('Llego el evento', objeto);
@@ -56,8 +59,13 @@ export class AppComponent {
           console.log(error);
         }
       );
-    this.arregloObservables.push(suscripcion);
-    suscripcion.unsubscribe();
+    // this.arregloObservables.push(suscripcion);
+    // this.arregloObservables.forEach(
+    //   (suscripcion)=>{
+    //     suscripcion.unsubscribe();
+    //   }
+    // )
+    // suscripcion.unsubscribe();
   }
 
   crearUsuario() {
