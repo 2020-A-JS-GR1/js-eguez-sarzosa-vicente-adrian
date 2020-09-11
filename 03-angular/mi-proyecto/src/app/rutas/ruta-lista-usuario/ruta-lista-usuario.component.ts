@@ -24,6 +24,23 @@ export class RutaListaUsuarioComponent implements OnInit {
     this._router.navigate(ruta);
   }
 
+  eliminarUsuario(id: number) {
+    const obsEliminar = this._usuarioService
+      .eliminar(id);
+    obsEliminar
+      .subscribe(
+        () => {
+          // Borrando de la interfaz
+          const indice = this.arregloUsuarios
+            .findIndex(u => u.id === id);
+          this.arregloUsuarios.splice(indice, 1);
+        },
+        (error) => {
+          console.error('Error', error);
+        }
+      );
+  }
+
   ngOnInit(): void {
     const observableTraerTodos = this._usuarioService.traerTodos();
     observableTraerTodos

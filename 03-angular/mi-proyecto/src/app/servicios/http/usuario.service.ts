@@ -28,5 +28,17 @@ export class UsuarioService {
       usuario
     )
   }
+  eliminar(idUsuario:number){
+    return this._httpClient.delete(
+      this.url + '/Usuario/' + idUsuario
+    )
+  }
 
 }
+
+
+
+
+
+
+
