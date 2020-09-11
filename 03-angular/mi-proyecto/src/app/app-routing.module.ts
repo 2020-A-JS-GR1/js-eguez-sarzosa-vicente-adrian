@@ -31,7 +31,12 @@ const routes: Routes = [
       {
         path: 'editar/:id',
         component: RutaEditarUsuarioComponent
-      }
+      },
+      {
+        path: '',
+        redirectTo: 'lista',
+        pathMatch: 'full'
+      },
     ]
   },
   {

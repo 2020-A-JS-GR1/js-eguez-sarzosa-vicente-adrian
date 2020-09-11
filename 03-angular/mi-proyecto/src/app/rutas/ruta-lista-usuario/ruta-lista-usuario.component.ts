@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {UsuarioService} from '../../servicios/http/usuario.service';
 
 @Component({
   selector: 'app-ruta-lista-usuario',
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RutaListaUsuarioComponent implements OnInit {
 
-  constructor() { }
+  arregloUsuarios = [];
+
+  constructor(
+    private readonly _usuarioService: UsuarioService
+  ) {
+
+  }
 
   ngOnInit(): void {
+    const observableTraerTodos = this._usuarioService.traerTodos();
+    observableTraerTodos
+      .subscribe(
+        (usuarios: any[]) => {
+          this.arregloUsuarios = usuarios;
+        },
+        (error) => {
+          console.error('Error', error);
+        }
+      )
   }
 
 }
