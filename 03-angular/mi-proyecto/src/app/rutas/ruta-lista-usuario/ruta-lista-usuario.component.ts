@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {UsuarioService} from '../../servicios/http/usuario.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-ruta-lista-usuario',
@@ -10,10 +11,17 @@ export class RutaListaUsuarioComponent implements OnInit {
 
   arregloUsuarios = [];
 
-  constructor(
-    private readonly _usuarioService: UsuarioService
+  constructor( // Inyecta dependendicas
+    private readonly _usuarioService: UsuarioService,
+    private readonly _router: Router
   ) {
 
+  }
+
+  irAEditarUsuario(id: number) {
+    const ruta = ['/usuario', 'editar', id];
+    // /usuario/editar/1
+    this._router.navigate(ruta);
   }
 
   ngOnInit(): void {

@@ -12,7 +12,9 @@
     <td>{{usuario.nombre}}</td>
     <td>{{usuario.cedula}}</td>
     <td>
-      <button>Editar</button>
+      <button (click)="irAEditarUsuario(usuario.id)">
+        Editar
+      </button>
       <button>Eliminar</button>
     </td>
   </tr>
