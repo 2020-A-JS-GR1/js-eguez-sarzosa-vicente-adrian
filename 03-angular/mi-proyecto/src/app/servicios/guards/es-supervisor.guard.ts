@@ -4,7 +4,7 @@ import {Observable} from 'rxjs';
 import {AuthService} from '../auth/auth.service';
 
 @Injectable()
-export class EsSupervisor implements CanActivate {
+export class EsSupervisorGuard implements CanActivate {
 
   constructor(
     private readonly _authService: AuthService

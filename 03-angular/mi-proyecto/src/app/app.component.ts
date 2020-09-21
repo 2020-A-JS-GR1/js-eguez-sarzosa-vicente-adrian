@@ -1,12 +1,13 @@
 import {Component, OnInit} from '@angular/core';
 import {UsuarioService} from './servicios/http/usuario.service';
+import {AuthService} from './servicios/auth/auth.service';
 
 @Component({
   selector: 'aplicacion-nueva',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   title = 'mi-proyecto';
   habilitado = true;
 
@@ -39,9 +40,11 @@ export class AppComponent implements OnInit{
 
   // Inyectar Dependencias
   constructor(
-    private readonly _usuarioService: UsuarioService
+    private readonly _usuarioService: UsuarioService,
+    private readonly _authService: AuthService
   ) {
   }
+
   ngOnInit() {
     this.mensajeConsola(true);
   }

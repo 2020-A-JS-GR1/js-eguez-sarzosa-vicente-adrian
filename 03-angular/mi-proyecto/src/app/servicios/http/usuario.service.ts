@@ -13,8 +13,8 @@ export class UsuarioService {
 
   }
 
-  traerTodos() {
-    return this._httpClient.get(this.url + '/Usuario')
+  traerTodos(consulta?: string) {
+    return this._httpClient.get(this.url + '/Usuario?' + consulta)
   }
 
   obtenerUnoPorId(idUsuario: number) {
@@ -28,7 +28,15 @@ export class UsuarioService {
       usuario
     )
   }
-  eliminar(idUsuario:number){
+
+  editar(usuario, id) {
+    return this._httpClient.put(
+      this.url + '/Usuario/' + id, // URL
+      usuario
+    )
+  }
+
+  eliminar(idUsuario: number) {
     return this._httpClient.delete(
       this.url + '/Usuario/' + idUsuario
     )

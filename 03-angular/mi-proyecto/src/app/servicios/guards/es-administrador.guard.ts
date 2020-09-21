@@ -4,7 +4,7 @@ import {Observable} from 'rxjs';
 import {AuthService} from '../auth/auth.service';
 
 @Injectable()
-export class EstaLogeadoGuard implements CanActivate {
+export class EsAdministradorGuard implements CanActivate {
 
   constructor(
     private readonly _authService: AuthService
@@ -16,11 +16,14 @@ export class EstaLogeadoGuard implements CanActivate {
     state: RouterStateSnapshot):
     Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
     // LOGICA BOOLEAN
-    if (this._authService.estaAutenticado) {
-      return true;
-    } else {
-      return false;
-    }
+    const esAdministrador = this._authService
+      .roles
+      .some(
+        (rol) => {
+          return rol === 'Administrador'
+        }
+      )
+    return esAdministrador;
   }
 
 }
